@@ -12,7 +12,7 @@ def readAllFiles(files):
         allDfs.append(df)# store add dataframes as a list
 
 cwd = os.getcwd()#getting the current working directory
-filelocation = cwd + r"/files" #keep folder name as a rew string change to folder name in the same format '/folder_name'
+filelocation = cwd + r"/files" #keep folder name as a raw string change to folder name in the same format '/folder_name'
 
 allDfs = [] #initiating list to store all dataframes
 allFiles = glob.glob(os.path.join(filelocation , "*.csv")) # glob gathering all the files in the selected path that end with csv, to use other formats please change the extension
